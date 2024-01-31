@@ -7,6 +7,7 @@
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/97432232f7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
     <div id="header">
@@ -24,7 +25,7 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Full Stack Web Developer</p>
+                <p class="multiple-text"></p>
                 <h1>Hi, I'm <span>Sai Praneeth</span><br> From University of Florida</h1>
 
             </div>
@@ -256,6 +257,16 @@
     function openmenu(){
         sidemenu.style.right= "0";
     }
+</script>
+
+<script>
+    const typed = new Typed('.multiple-text',{
+        strings:['Full-stack Web Developer', 'YouTuber', 'Badminton Player'],
+        typeSpeed:100,
+        backSpeed:100,
+        backDelay:1000,
+        loop:true
+    })
 </script>
 
 </body>
