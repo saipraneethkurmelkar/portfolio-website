@@ -72,6 +72,11 @@ nav ul li a:hover::after{
     margin-top: 20%;
     font-size: 30px;
 }
+.header-text .multiple-text{
+    display: inline;
+}
+
+
 
 .header-text h1{
     font-size:50px;
